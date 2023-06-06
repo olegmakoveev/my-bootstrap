@@ -34,9 +34,9 @@ const Form = () => {
   
   return (
     <div>
-        <form id='form' onSubmit={handleSubmit(onSubmit)}>
-            <h1>Заполните заявку на обратную связь</h1>
-        <div className='input-group mb-3'>
+        <form id='form ' onSubmit={handleSubmit(onSubmit)}>
+            <h1>Анкета для обратной связи</h1>
+        <div className='input-group mb-3 '>
             <input
             {...register('lastName', {
                 required: true,

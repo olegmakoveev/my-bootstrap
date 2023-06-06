@@ -9,9 +9,9 @@ import "../App.css"
 const Header = () => {
   return (
     <div>
-         <Navbar bg="dark" variant="dark">
+         <Navbar bg="dark" variant="darkg">
         <Container>
-          <Navbar.Brand> <Link to={'/'}>A&B</Link> </Navbar.Brand>
+          <Navbar.Brand> <Link to={'/'}>Детские игровые комплексы</Link> </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link>
               <Link to={'/'}>
@@ -30,7 +30,7 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link>
               <Link to={'/description'}>
-              Описание
+              О нас
               </Link>
               </Nav.Link>
           </Nav>

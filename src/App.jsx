@@ -16,17 +16,17 @@ import Description from './components/Description';
 export const AppContext = React.createContext({})
 
 function App() {
-//хранения данных туров
+//хранения данных товара
 const [tyrs, setTyrs] = useState([])
-//для избранных туров
+//для избранных товаров
 const [favorites, setFavorites] = useState([])
 //для корзины
 const [overlayItems, setOverlayItems] = useState([])
 useEffect (()=>{
   async function axiosData(){
-    const tyrsData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/tyrs')
+    const tyrsData = await axios.get('https://6458cf848badff578efb805c.mockapi.io/tyrs')
     const favoritesData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/favorites')
-    const cartData = await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/cart')
+    const cartData = await axios.get('https://6458cf848badff578efb805c.mockapi.io/cart')
 
     setTyrs(tyrsData.data)
     setFavorites(favoritesData.data)
